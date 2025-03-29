@@ -153,12 +153,12 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8080",
     "http://localhost:3000",  # Allow React frontend to access the API
 ]
-CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_METHODS = [
     "GET",
-    "POST",
+    "POST", 
     "PUT",
     "PATCH",
     "DELETE",
@@ -199,6 +199,7 @@ SIMPLE_JWT = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
+    "https://blooog-o11c758tx-oggy3682s-projects.vercel.app",
     "http://localhost:8080",  # Vue.js Frontend
     "http://127.0.0.1:8080",  # Alternative localhost
 ]
