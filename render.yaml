@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: cms-backend
+    env: python
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+      python manage.py migrate
+    startCommand: gunicorn cms_backend.wsgi
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase: cms-database
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+
+databases:
+  - name: cms-database
+    plan: free
