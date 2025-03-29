@@ -17,6 +17,12 @@ from django.utils.decorators import method_decorator
 def test_view(request):
     return JsonResponse({"message": "Hello from Django API!"})
 
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Hello, CMS is working!")
+
+
 # ✅ Category Views
 class CategoryListCreateView(generics.ListCreateAPIView):
     queryset = Category.objects.all()

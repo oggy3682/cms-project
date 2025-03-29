@@ -10,6 +10,9 @@ def home(request):
     return HttpResponse("Django is running!")
 
 urlpatterns = [
+
+    path('', include('blog.urls')),
+
     path('', home),  # Add this to serve something at '/'
     # ✅ Admin Panel
     path('admin/', admin.site.urls),

@@ -148,11 +148,12 @@ INTERNAL_IPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
+    "https://blooog-p6uibwkod-oggy3682s-projects.vercel.app",
     "http://localhost:8080",  # Your Vue dev server
     "http://127.0.0.1:8080",
     "http://localhost:3000",  # Allow React frontend to access the API
 ]
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOW_CREDENTIALS = True  # Allow authentication cookies
 
 AUTHENTICATION_BACKENDS = [

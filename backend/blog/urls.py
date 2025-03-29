@@ -1,4 +1,5 @@
 from django.urls import path
+from . import views
 from .views import (
     test_view, CategoryListCreateView, CategoryRetrieveUpdateDestroyView, 
     BlogPostListCreateView, BlogPostRetrieveUpdateDestroyView, PostListCreateView, 
@@ -11,6 +12,8 @@ def api_root(request):
     return JsonResponse({"message": "Welcome to the CMS API!"})
 
 urlpatterns = [ 
+    path('', views.home, name='home'),
+
     path('', api_root, name='api-root'),  # 👈 Add this
     path('test/', test_view, name='test-view'),
 
