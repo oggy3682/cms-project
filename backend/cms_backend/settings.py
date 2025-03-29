@@ -154,7 +154,17 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Allow React frontend to access the API
 ]
 CORS_ALLOW_ALL_ORIGINS = False
-CORS_ALLOW_CREDENTIALS = True  # Allow authentication cookies
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+    "PUT",
+    "PATCH",
+    "DELETE",
+    "OPTIONS",
+]
+
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',  # ✅ Keep only this for username authentication
