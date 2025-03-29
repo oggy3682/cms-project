@@ -4,13 +4,13 @@ charset-normalizer==3.4.1
 colorama==0.4.6
 defusedxml==0.7.1
 dj-rest-auth==7.0.1
-Django==5.0.3  # Latest stable version
+Django==4.2.16
 django-allauth==65.3.1
 django-cors-headers==4.7.0
-django-debug-toolbar==5.0.1
+django-debug-toolbar==4.1.0
 django-extensions==3.2.3
 djangorestframework==3.15.2
-djangorestframework_simplejwt==5.5.0
+djangorestframework-simplejwt==5.5.0
 httpie==3.2.4
 idna==3.10
 markdown-it-py==3.0.0
@@ -24,6 +24,6 @@ requests==2.32.3
 requests-toolbelt==1.0.0
 rich==13.9.4
 setuptools==76.0.0
-sqlparse==0.4.4  # Fixed version
+sqlparse==0.4.4
 tzdata==2025.1
 urllib3==2.3.0
