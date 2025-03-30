@@ -7,7 +7,7 @@ const API_BASE_URL = "https://cms-project-rknw.onrender.com/api/";
 // Create Axios instance
 const api = axios.create({
   baseURL: API_BASE_URL,
-  timeout: 5000, // Prevents long waits if API is unresponsive
+  timeout: 15000, // Prevents long waits if API is unresponsive
   headers: {
     "Content-Type": "application/json",
   },
