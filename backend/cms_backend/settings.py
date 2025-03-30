@@ -117,7 +117,7 @@ INTERNAL_IPS = ["127.0.0.1"]
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    "https://blooog-234klkrme-oggy3682s-projects.vercel.app",
+    "https://blooog-6nl0yn6hq-oggy3682s-projects.vercel.app/",
     "http://localhost:8080",
     "http://127.0.0.1:8080",
     "http://localhost:3000",
@@ -125,6 +125,13 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_METHODS = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'authorization',
+    'x-requested-with',
+]
+
 
 # Authentication settings
 AUTHENTICATION_BACKENDS = [
